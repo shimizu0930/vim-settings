@@ -6,7 +6,7 @@
 本設定、手順について、いかなる保証をしません。
 また、本設定、手順による損害についても、責任を負わないものとします。
 
-## Vim設定
+## Vim 設定
 
 ### neovim インストール
 
@@ -28,5 +28,16 @@ pip3 install --upgrade neovim
 
 `:PlugInstall`
 
-## Git設定
+## Git 設定
 
+### ~/.commit_template の修正
+
+`.commit_template`を参考に、~/.commit_template を作成する
+
+### git Config の編集
+
+以下のコマンドで先に作成したファイルを適用する
+
+''' /bin/sh
+git config --global commit.template ~/.commit_template
+'''
